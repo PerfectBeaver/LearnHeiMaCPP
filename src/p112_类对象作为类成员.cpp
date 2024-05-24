@@ -3,7 +3,7 @@
 
 using namespace std;
 
-class Phone{
+class Phone {
 public:
     Phone(string pName) {
         m_PName = pName;

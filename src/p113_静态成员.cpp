@@ -1,9 +1,9 @@
 #include <iostream>
 #include <string>
+
 using namespace std;
 
-class Person
-{
+class Person {
 public:
     static int m_A; //所有对象都共享一份数据，类内声明，类外初始化
 
@@ -24,9 +24,9 @@ void test01() {
 }
 
 void test02() {
-Person p;
-cout << p.m_A << endl;
-cout << Person::m_A << endl;
+    Person p;
+    cout << p.m_A << endl;
+    cout << Person::m_A << endl;
 }
 
 int main() {
