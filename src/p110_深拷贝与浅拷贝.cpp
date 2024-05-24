@@ -39,3 +39,6 @@ void test01() {
     Person p2(p1);
     cout << "p2的年龄为：" << p2.m_Age << "身高为：" << p2.m_Height << endl;
 }
+ int main(){
+    test01();
+ }

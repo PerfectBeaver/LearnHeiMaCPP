@@ -1,3 +1,7 @@
+#include <iostream>
+
+using namespace std;
+
 //struct 权限默认是公共
 //class 默认权限是私有
 

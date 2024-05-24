@@ -30,3 +30,6 @@ void test01(){
     cout << "m_C =" <<p.m_C << endl;
 }
 
+int main(){
+    test01();
+}

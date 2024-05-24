@@ -12,7 +12,7 @@ private:
 };
 
 int Person::m_A = 100;
-int Person::m_b = 200;
+//int Person::m_b = 200;
 
 void test01() {
     Person p;
