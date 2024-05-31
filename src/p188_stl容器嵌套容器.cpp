@@ -5,7 +5,7 @@ using namespace std;
 
 void test01()
 {
-    vector<vector<int>> v;
+    vector<vector<int> > v;
 
     vector<int> v1;
     vector<int> v2;
@@ -25,7 +25,7 @@ void test01()
     v.push_back(v3);
     v.push_back(v4);
 
-    for (vector<vector<int>>::iterator it = v.begin(); it != v.end(); it++)
+    for (vector<vector<int> >::iterator it = v.begin(); it != v.end(); it++)
     {
         for (vector<int>::iterator vit = (*it).begin(); vit != (*it).end(); vit++)
         {
