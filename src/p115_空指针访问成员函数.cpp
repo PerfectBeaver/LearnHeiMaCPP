@@ -1,14 +1,18 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-class Person {
+class Person
+{
 public:
-    void showClassName() {
+    void showClassName()
+    {
         cout << "this is Person class" << endl;
     }
 
-    void showPersonAge() {
-        if (this == NULL){
+    void showPersonAge()
+    {
+        if (this == NULL)
+        {
             return;
         }
         cout << "age = " << this->m_Age << endl;
@@ -17,13 +21,14 @@ public:
     int m_Age;
 };
 
-void test01() {
-    Person * p = NULL;
-    //p->showClassName();
+void test01()
+{
+    Person *p = NULL;
+    // p->showClassName();
     p->showPersonAge();
-
 }
 
-int main() {
+int main()
+{
     test01();
 }

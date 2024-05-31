@@ -1,13 +1,13 @@
-#include<iostream>
+#include <iostream>
 
 using namespace std;
 
-//运算符重载也可以发生函数重载
+// 运算符重载也可以发生函数重载
 
 class Person
 {
 public:
-    //成员函数重载+号
+    // 成员函数重载+号
     /*
     Person operator+(Person &p) {
         Person temp;
@@ -21,22 +21,25 @@ public:
     int m_B;
 };
 
-//全局函数的重载
-Person operator+(Person &p1, Person &p2){
+// 全局函数的重载
+Person operator+(Person &p1, Person &p2)
+{
     Person temp;
     temp.m_A = p1.m_A + p2.m_A;
     temp.m_B = p1.m_B + p2.m_B;
     return temp;
 }
 
-Person operator+(Person &p1, int num){
+Person operator+(Person &p1, int num)
+{
     Person temp;
     temp.m_A = p1.m_A + num;
     temp.m_B = p1.m_B + num;
     return temp;
 }
 
-void test01() {
+void test01()
+{
     Person p1;
     p1.m_A = 10;
     p1.m_B = 10;
@@ -53,7 +56,8 @@ void test01() {
     cout << "p4.m_B = " << p4.m_B << endl;
 }
 
-int main() {
+int main()
+{
     test01();
     return 0;
 }

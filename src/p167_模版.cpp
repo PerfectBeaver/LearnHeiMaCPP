@@ -1,7 +1,7 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-template<typename T>
+template <typename T>
 void mySwap(T &a, T &b)
 {
     T temp = a;
@@ -17,9 +17,9 @@ void test01()
     mySwap(a, b);
     cout << "a = " << a << endl;
     cout << "b = " << b << endl;
-
 }
 
-int main() {
+int main()
+{
     test01();
 }

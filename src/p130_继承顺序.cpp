@@ -1,20 +1,19 @@
-#include<iostream>
+#include <iostream>
 
 using namespace std;
 
 class Base
 {
 public:
-    Base ()
+    Base()
     {
-        cout << "Base构造函数" <<endl;
+        cout << "Base构造函数" << endl;
     }
 
-    ~Base ()
+    ~Base()
     {
-        cout << "Base析构函数" <<endl;
+        cout << "Base析构函数" << endl;
     }
-
 };
 
 class Son : public Base
@@ -31,7 +30,8 @@ public:
     }
 };
 
-void test01() {
+void test01()
+{
     Son s;
 }
 

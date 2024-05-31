@@ -3,7 +3,8 @@
 
 using namespace std;
 
-void test01() {
+void test01()
+{
     ofstream ofs;
     ofs.open("test.txt", ios::out);
     ofs << "姓名：张三" << endl;
@@ -12,7 +13,8 @@ void test01() {
     ofs.close();
 }
 
-void test02(){
+void test02()
+{
     ifstream ifs;
     ifs.open("test.txt", ios::in);
     if (!ifs.is_open())
@@ -21,13 +23,14 @@ void test02(){
         return;
     }
     char buf[1024] = {0};
-    while(ifs>>buf)
+    while (ifs >> buf)
     {
         cout << buf << endl;
     }
     ifs.close();
-}   
+}
 
-int main() {
+int main()
+{
     test02();
 }

@@ -1,4 +1,4 @@
-#include<iostream>
+#include <iostream>
 
 using namespace std;
 
@@ -11,7 +11,8 @@ public:
     }
 };
 
-class Cat:public Animal {
+class Cat : public Animal
+{
 public:
     void speak()
     {
@@ -19,7 +20,8 @@ public:
     }
 };
 
-class Dog:public Animal {
+class Dog : public Animal
+{
 public:
     void speak()
     {
@@ -41,6 +43,7 @@ void test01()
     doSpeak(dog);
 }
 
-int main(){
+int main()
+{
     test01();
 }

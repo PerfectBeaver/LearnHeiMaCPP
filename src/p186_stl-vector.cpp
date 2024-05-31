@@ -7,8 +7,9 @@ void myPrint(int val)
     cout << val << endl;
 }
 
-void test01(){
-    vector<int>v;
+void test01()
+{
+    vector<int> v;
     v.push_back(10);
     v.push_back(20);
     v.push_back(30);
@@ -23,7 +24,7 @@ void test01(){
         itBegin++;
     }
 
-    for(vector<int>::iterator it = v.begin(); it != v.end(); it++)
+    for (vector<int>::iterator it = v.begin(); it != v.end(); it++)
     {
         cout << *it << endl;
     }
@@ -31,6 +32,7 @@ void test01(){
     for_each(v.begin(), v.end(), myPrint);
 }
 
-int main(){
+int main()
+{
     test01();
 }

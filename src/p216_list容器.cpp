@@ -1,9 +1,11 @@
-#include<iostream>
-#include<list>
+#include <iostream>
+#include <list>
 using namespace std;
 
-void printList(const list<int>&L) {
-    for(list<int>::const_iterator it = L.begin(); it != L.end(); it++) {
+void printList(const list<int> &L)
+{
+    for (list<int>::const_iterator it = L.begin(); it != L.end(); it++)
+    {
         cout << *it << " ";
     }
     cout << endl;
@@ -11,7 +13,7 @@ void printList(const list<int>&L) {
 
 void test01()
 {
-    list<int>L1;
+    list<int> L1;
 
     L1.push_back(10);
     L1.push_back(20);
@@ -20,16 +22,17 @@ void test01()
 
     printList(L1);
 
-    list<int>L2(L1.begin(), L1.end());
+    list<int> L2(L1.begin(), L1.end());
     printList(L2);
 
-    list<int>L3(L2);
+    list<int> L3(L2);
     printList(L3);
 
-    list<int>L4(10, 1000);
+    list<int> L4(10, 1000);
     printList(L4);
 }
 
-int main() {
+int main()
+{
     test01();
 }

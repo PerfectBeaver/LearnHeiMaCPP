@@ -1,4 +1,4 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 // class Java
@@ -92,7 +92,7 @@ public:
     }
 };
 
-class Java: public BasePage
+class Java : public BasePage
 {
 public:
     void content()
@@ -101,7 +101,7 @@ public:
     }
 };
 
-class Python: public BasePage
+class Python : public BasePage
 {
 public:
     void content()
@@ -110,7 +110,7 @@ public:
     }
 };
 
-class CPP: public BasePage
+class CPP : public BasePage
 {
 public:
     void content()
@@ -128,7 +128,7 @@ void test01()
     ja.left();
     ja.content();
 
-    cout <<"-----------------------------------" << endl;
+    cout << "-----------------------------------" << endl;
     cout << "Python下载视频如下：" << endl;
     Python py;
     py.header();
@@ -136,16 +136,16 @@ void test01()
     py.left();
     py.content();
 
-    cout <<"-----------------------------------" << endl;
+    cout << "-----------------------------------" << endl;
     cout << "C++下载视频如下：" << endl;
     CPP c;
     c.header();
     c.footer();
     c.left();
     c.content();
-
 }
 
-int main() {
+int main()
+{
     test01();
 }

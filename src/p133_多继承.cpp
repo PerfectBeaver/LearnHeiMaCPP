@@ -1,13 +1,14 @@
-#include<iostream>
+#include <iostream>
 
-//using namespace std;
+// using namespace std;
 using std::cout;
 using std::endl;
 
 class Base1
 {
 public:
-    Base1(){
+    Base1()
+    {
         m_A = 100;
     }
 
@@ -17,10 +18,11 @@ public:
 class Base2
 {
 public:
-    Base2(){
+    Base2()
+    {
         m_B = 200;
     }
-    
+
     int m_B;
 };
 
@@ -42,7 +44,8 @@ void test01()
     cout << "sizeof Son = " << sizeof(s) << endl;
 }
 
-int main(){
+int main()
+{
     test01();
     return 0;
 }

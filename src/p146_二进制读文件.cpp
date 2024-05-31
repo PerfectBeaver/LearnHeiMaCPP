@@ -1,4 +1,4 @@
-#include<iostream>
+#include <iostream>
 #include <fstream>
 
 using namespace std;
@@ -14,17 +14,19 @@ void test01()
 {
     ifstream ifs;
     ifs.open("person.txt", ios::in | ios::binary);
-    if(!ifs.is_open()) {
+    if (!ifs.is_open())
+    {
         cout << "文件打开失败" << endl;
         return;
     }
 
     Person p;
-    ifs.read((char*)&p, sizeof(Person));
+    ifs.read((char *)&p, sizeof(Person));
     cout << "姓名：" << p.m_Name << endl;
     ifs.close();
 }
 
-int main(){
+int main()
+{
     test01();
 }

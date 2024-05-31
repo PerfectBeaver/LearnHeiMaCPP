@@ -4,9 +4,10 @@
 
 using namespace std;
 
-void printList(list<int>&L)
+void printList(list<int> &L)
 {
-    for(list<int>::const_iterator it = L.begin(); it != L.end(); it++){
+    for (list<int>::const_iterator it = L.begin(); it != L.end(); it++)
+    {
         cout << *it << " ";
     }
     cout << endl;
@@ -14,7 +15,7 @@ void printList(list<int>&L)
 
 void test01()
 {
-    list<int>L1;
+    list<int> L1;
     L1.push_back(20);
     L1.push_back(10);
     L1.push_back(50);
@@ -26,11 +27,11 @@ void test01()
     L1.reverse();
     cout << "反转后：" << endl;
     printList(L1);
-
 }
 
-void test02(){
-    list<int>L1;
+void test02()
+{
+    list<int> L1;
     L1.push_back(20);
     L1.push_back(10);
     L1.push_back(50);
@@ -39,13 +40,13 @@ void test02(){
     cout << "排序前：" << endl;
     printList(L1);
 
-    //sort(L1.begin(), L1.end());
+    // sort(L1.begin(), L1.end());
     L1.sort();
     cout << "排序后：" << endl;
     printList(L1);
 }
 
-int main() {
+int main()
+{
     test02();
-
 }

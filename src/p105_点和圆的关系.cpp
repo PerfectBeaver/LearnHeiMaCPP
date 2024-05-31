@@ -2,22 +2,26 @@
 
 using namespace std;
 
-class Point 
+class Point
 {
 public:
-    void setX(int x){
+    void setX(int x)
+    {
         m_X = x;
     }
 
-    int getX(){
+    int getX()
+    {
         return m_X;
     }
 
-    void setY(int y){
+    void setY(int y)
+    {
         m_Y = y;
     }
 
-    int getY(){
+    int getY()
+    {
         return m_Y;
     }
 
@@ -29,45 +33,53 @@ private:
 class Circle
 {
 public:
-    void setR(int r) {
+    void setR(int r)
+    {
         m_R = r;
-
     }
 
-    int getR() {
+    int getR()
+    {
         return m_R;
     }
 
-    void setCenter(Point center) {
+    void setCenter(Point center)
+    {
         m_Center = center;
     }
 
-    Point getCenter() {
+    Point getCenter()
+    {
         return m_Center;
     }
 
 private:
     int m_R;
     Point m_Center;
-
 };
 
-void isInCircle(Circle &c, Point &p) {
-    int distance = 
-    (c.getCenter().getX() - p.getX())*(c.getCenter().getX() - p.getX()) + 
-    (c.getCenter().getY() - p.getY())*(c.getCenter().getY() - p.getY());
+void isInCircle(Circle &c, Point &p)
+{
+    int distance =
+        (c.getCenter().getX() - p.getX()) * (c.getCenter().getX() - p.getX()) +
+        (c.getCenter().getY() - p.getY()) * (c.getCenter().getY() - p.getY());
 
     int rDistance = c.getR() * c.getR();
 
-    if (distance == rDistance) {
+    if (distance == rDistance)
+    {
         cout << "the point is on the circle" << endl;
-    } else if (distance > rDistance) {
+    }
+    else if (distance > rDistance)
+    {
         cout << "the point is outside of the circle" << endl;
-    } else {
+    }
+    else
+    {
         cout << "the point is in the circle" << endl;
     }
 }
 
-int main() {
-
+int main()
+{
 }

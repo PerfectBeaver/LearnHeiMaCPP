@@ -1,4 +1,4 @@
-#include<iostream>
+#include <iostream>
 #include <string>
 
 using namespace std;
@@ -6,7 +6,6 @@ using namespace std;
 class Animal
 {
 public:
-
     Animal()
     {
         cout << "animal的构造函数调用" << endl;
@@ -20,7 +19,7 @@ public:
     virtual void speak() = 0;
 };
 
-class Cat:public Animal
+class Cat : public Animal
 {
 public:
     Cat(string name)
@@ -36,7 +35,7 @@ public:
 
     ~Cat()
     {
-        if(m_Name != NULL) 
+        if (m_Name != NULL)
         {
             cout << "cat的析构函数调用" << endl;
             delete m_Name;
@@ -49,12 +48,13 @@ public:
 
 void test01()
 {
-    Animal * animal = new Cat("Tom");
+    Animal *animal = new Cat("Tom");
     animal->speak();
     delete animal;
 }
 
-int main() {
+int main()
+{
     test01();
     return 0;
 }

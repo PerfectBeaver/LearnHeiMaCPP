@@ -15,9 +15,9 @@ public:
     Building *building;
 };
 
-class Building 
+class Building
 {
-friend class GoodGay;
+    friend class GoodGay;
 
 public:
     Building();
@@ -29,7 +29,8 @@ private:
     string m_BedRoom;
 };
 
-Building::Building(){
+Building::Building()
+{
     m_SittingRoom = "客厅";
     m_BedRoom = "卧室";
 }
@@ -41,16 +42,18 @@ GoodGay::GoodGay()
 
 void GoodGay::visit()
 {
-    cout<<"好基友正在访问: "<< building->m_SittingRoom << endl;
-    cout<<"好基友正在访问: "<< building->m_BedRoom << endl;
+    cout << "好基友正在访问: " << building->m_SittingRoom << endl;
+    cout << "好基友正在访问: " << building->m_BedRoom << endl;
 }
 
-void test01() {
+void test01()
+{
     GoodGay gg;
     gg.visit();
 }
 
-int main() {
+int main()
+{
     test01();
     return 0;
 }

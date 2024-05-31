@@ -1,10 +1,10 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-class Base 
+class Base
 {
 public:
-    Base ()
+    Base()
     {
         m_A = 100;
     }
@@ -17,10 +17,11 @@ public:
     int m_A;
 };
 
-class Son:public Base
+class Son : public Base
 {
 public:
-    Son (){
+    Son()
+    {
         m_A = 200;
     }
 
@@ -32,18 +33,21 @@ public:
     int m_A;
 };
 
-void test01() {
+void test01()
+{
     Son s;
     cout << "Son下的m_A = " << s.m_A << endl;
     cout << "Base下的m_A = " << s.Base::m_A << endl;
 }
 
-void test02() {
+void test02()
+{
     Son s;
     s.func();
     s.Base::func();
 }
 
-int main() {
+int main()
+{
     test02();
 }

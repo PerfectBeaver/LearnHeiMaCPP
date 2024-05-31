@@ -1,4 +1,4 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 #include <queue>
 
@@ -15,8 +15,9 @@ public:
     int m_Age;
 };
 
-void test01() {
-    queue<Person>q;
+void test01()
+{
+    queue<Person> q;
 
     Person p1("唐僧", 30);
     Person p2("孙悟空", 1000);
@@ -30,18 +31,17 @@ void test01() {
 
     cout << "队列大小：" << q.size() << endl;
 
-    while(!q.empty())
+    while (!q.empty())
     {
         cout << "队头元素 --- 姓名" << q.front().m_Name << "年龄：" << q.front().m_Age << endl;
         cout << "队尾元素 --- 姓名" << q.back().m_Name << "年龄：" << q.back().m_Age << endl;
         q.pop();
-
     }
 
     cout << "队列大小：" << q.size() << endl;
-
 }
 
-int main() {
+int main()
+{
     test01();
 }
